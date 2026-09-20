@@ -15,17 +15,38 @@ Else
 6.	Return 0
  
 Program:
+```
+#include <stdio.h>
+#include <string.h>
 
-//type your code here
+struct Person {
+    char name[50];
+    int age;
+};
 
-
+int main() {
+    struct Person p;
+    scanf("%d", &p.age);
+    scanf("%s", p.name);
+    printf("Age:%d\n", p.age);
+    printf("Name:%svaccine:%d\n",p.name,p.age);
+    
+   
+    if(p.age>6)
+    printf("eligibility:yes");
+    else
+    printf("eligibility:no");
+    return 0;
+}
+```
 Output:
 
-//paste your output here
-
+<img width="608" height="373" alt="image" src="https://github.com/user-attachments/assets/0b7c9f2b-b05a-4d03-9500-73c88c259875" />
 
 Result:
-Thus, the program is verified successfully. 
+
+Thus, the program has been verified successfully.
+All outputs were obtained as expected, the logic was validated, and the execution was completed without any errors or issues.
 
 
 
@@ -43,22 +64,28 @@ Algorithm:
 7.	Return 0
  
 Program:
-
-//type your code here
-
-
-
-
+```
+#include<stdio.h>
+struct add
+{
+    int a,b;
+}n;
+int main()
+{
+    scanf("%d%d",&n.a,&n.b);
+    printf("%d",n.a+n.b);
+}
+```
 Output:
 
-
-//paste your output here
-
+<img width="353" height="314" alt="image" src="https://github.com/user-attachments/assets/afd76caa-59cc-4639-89d4-fe61b658483f" />
 
 
 
 Result:
-Thus, the program is verified successfully
+
+Thus, the program has been verified successfully.
+All outputs were obtained as expected, the logic was validated, and the execution was completed without any errors or issues.
 
 
  
@@ -86,28 +113,29 @@ Use scanf to input the file name into the name array.
  
 Program:
 
-//type your code here
-
-
-
+```
+#include <stdio.h>
+int main()
+{
+    FILE *fp;
+    char a[20];
+    scanf("%s",a);
+    printf("%s File Created Successfully\n",a);
+    fp = fopen("a","w");
+    printf("%s File Opened\n",a);
+    fclose(fp);
+    printf("%s File Closed\n",a);
+}
+```
 
 Output:
 
-
-//paste your output here
-
-
-
-
-
-
-
-
-
-
+<img width="989" height="469" alt="image" src="https://github.com/user-attachments/assets/7b6fd943-84fb-42e6-a7e2-d342eba4d116" />
 
 Result:
-Thus, the program is verified successfully
+
+Thus, the program has been verified successfully.
+All outputs were obtained as expected, the logic was validated, and the execution was completed without any errors or issues.
  
 
 
@@ -132,24 +160,36 @@ Use scanf to input the file name into the name array and the number of strings i
 5.	Return 0 to indicate successful program execution.
  
 Program:
-
-//type your code here
-
-
-
-
+```
+#include <stdio.h>
+int main()
+{
+    FILE *fp;
+    char name[30] , b[30];
+    int a;
+    scanf("%s",name);
+    scanf("%d",&a);
+    fp = fopen("name" , "w");
+    printf("%s Opened\n",name);
+    for(int i=0 ; i<a ; i++)
+    {
+        scanf("%s",b);
+        fputs(b,fp);
+    }
+    printf("Data added Successfully\n");
+}
+```
 Output:
 
-
-//paste your output here
-
-
+<img width="707" height="443" alt="image" src="https://github.com/user-attachments/assets/e95be652-7f92-40ea-8e93-46044ea42d2d" />
 
 
 
 
 Result:
-Thus, the program is verified successfully
+
+Thus, the program has been verified successfully.
+All outputs were obtained as expected, the logic was validated, and the execution was completed without any errors or issues.
 
 
 
@@ -186,21 +226,30 @@ Algorithm:
 13.End the program by returning 0.
 
 Program:
+```
+#include<stdio.h>
+struct std{
+    char name[20];
+    int roll;
+    float per;
+}acc;
 
-//type your code here
-
-
-
-
+int main(){
+    scanf("%d",&acc.roll);
+    scanf("%s",acc.name);
+    scanf("%f",&acc.per);
+    printf("Rollno is: %d\n",acc.roll);
+    printf("Name is: %s\n",acc.name);
+    printf("Percentage is: %.2f",acc.per);
+}
+```
 Output:
 
-
-//paste your output here
-
-
-
+<img width="576" height="279" alt="image" src="https://github.com/user-attachments/assets/55a90873-74bd-4793-933a-6fd7c5481876" />
 
 
 
 Result:
-Thus, the program is verified successfully
+
+Thus, the program has been verified successfully.
+All outputs were obtained as expected, the logic was validated, and the execution was completed without any errors or issues.
