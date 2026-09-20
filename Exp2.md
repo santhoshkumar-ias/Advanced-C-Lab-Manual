@@ -33,6 +33,7 @@ struct numbers add(struct numbers n)
 }
 
 int main()
+
 {
     struct numbers n, sum;
 
@@ -48,11 +49,15 @@ int main()
 
     return 0;
 }
+
+
 Output:
 
 Enter value of a: 10
 Enter value of b: 20
 Sum = 30
+
+
 Result:
 
 Thus, the C program for passing a structure as a function argument and returning a structure from a function was executed and verified successfully.
