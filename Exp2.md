@@ -5,6 +5,7 @@ Aim:
 To write a C program for passing a structure as a function argument and returning a structure from a function.
 
 Algorithm:
+
 1.Define a structure numbers with members a and b.
 2.Declare a variable n of type numbers.
 3.Prompt the user to enter values for a and b.
@@ -48,6 +49,7 @@ int main()
     return 0;
 }
 Output:
+
 Enter value of a: 10
 Enter value of b: 20
 Sum = 30
